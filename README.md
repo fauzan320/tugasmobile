@@ -21,7 +21,18 @@ Moh. Sholihul Fauzan - 182410102014
 Arif Nurul Rahman H. - 182410102015
 Agustian Armando - 182410102057
 
+Rencana Aplikasi
+aplikasi airsudekat
+    aplikasi yang membantu orang untuk mendaftarkan desanya agar mendapatkan bantuan air bersih (pdam / pembangunan sumur) untuk mewujudkan  sdgs no 6 yakni sanitasi bersih .serta ada fitur sharing alat penjernih air untuk membuat alat yang digunakan untuk membantu meyaring air kotor agar bisa jadi bersih 
+
+fitur
+1. Sharing alat penjernih air
+  jadi user bisa membaca tutorial yang di berikan dan bisa sharing alat temuan ke admin
+2. Pendaftaran air bersih ke desa
+  jadi user bisa mendaftarkan diri lewat aplikasi dengan syarat daerahnya termaksud yang mengalami krisis air bersih , sehiingga bisa di bantu oleh pihak kepala desa  dengan tim airsudekatnya
+
+
 progres  28 okt 2020
-untuk progres minggu cukup sederhana yakni masih mencoba untuk membuat navigasi antar halaman
+untuk progres minggu ini cukup sederhana yakni masih mencoba untuk membuat navigasi antar halaman
 karna merupakan tugas, dan maaf masih kecil sekali progress nya insyaallah kedapane akan lebih berusaha lagi
 
