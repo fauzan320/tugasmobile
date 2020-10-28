@@ -48,12 +48,11 @@ class MyApp extends StatelessWidget { //class myapp turunan dari stlwidget
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center, // membuat posisi tengah vertikal
               children: <Widget> [
-                Text('Moh. Sholihul Fauzan - 182410102014'),
-                Text('Arif Nurul Rahman H. - 182410102015'),
-                Text('Agustian Armando - 182410102057'),
+                Text('Pendaftaran air bersih ke desa'),
+              
                 //membuat text 
                 RaisedButton(// membuat tombol
-                  child: Text('Tekan aja dah'),
+                  child: Text('DAFTAR'),
                   onPressed: (){
                     Navigator.pushNamed(context, HalamanKedua.routeName);// menuju halama kedua
                   },
@@ -82,7 +81,7 @@ static const String routeName ='/HalamanKedua';
           //didalanya terdapat properti titlle 
           title:Text(
             //memberi text pada appbar
-            'Jeng Jeng !!!',
+            'FORM Pendaftaran',
             //memberi styling appbar
             style: TextStyle(
               fontWeight:FontWeight.bold,
