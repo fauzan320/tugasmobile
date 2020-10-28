@@ -108,11 +108,11 @@ static const String routeName ='/HalamanKedua';
               
               mainAxisAlignment: MainAxisAlignment.center, // membuat posisi tengah vertikal
               children:  [
-                Text('ZONk !'),
+                Text('Fitur belum tersedia'),
                 Text('Maaf masih baru belajar'),
                 //membuat text
                 RaisedButton( // membuat tombol
-                  child: Text('Balek dah'),
+                  child: Text('Kembali'),
                   onPressed: (){
                     Navigator.pop(context); // kembali ke halaman sebelumnya
                   },
