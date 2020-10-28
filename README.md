@@ -23,5 +23,5 @@ Agustian Armando - 182410102057
 
 progres  28 okt 2020
 untuk progres minggu cukup sederhana yakni masih mencoba untuk membuat navigasi antar halaman
-karna merupakan tugas, dan maaf masih kecil sekali progress nya 
+karna merupakan tugas, dan maaf masih kecil sekali progress nya insyaallah kedapane akan lebih berusaha
 
