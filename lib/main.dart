@@ -109,6 +109,7 @@ static const String routeName ='/HalamanKedua';
               mainAxisAlignment: MainAxisAlignment.center, // membuat posisi tengah vertikal
               children:  [
                 Text('ZONk !'),
+                Text('Maaf masih baru belajar'),
                 //membuat text
                 RaisedButton( // membuat tombol
                   child: Text('Balek dah'),
