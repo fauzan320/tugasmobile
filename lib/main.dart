@@ -81,7 +81,7 @@ static const String routeName ='/HalamanKedua';
           //didalanya terdapat properti titlle 
           title:Text(
             //memberi text pada appbar
-            'FORM Pendaftaran',
+            'FORM Pendaftaran ',
             //memberi styling appbar
             style: TextStyle(
               fontWeight:FontWeight.bold,
