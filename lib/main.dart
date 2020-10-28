@@ -22,6 +22,7 @@ class MyApp extends StatelessWidget { //class myapp turunan dari stlwidget
           ),
           // dengan widget teks
           
+          
         centerTitle: true,// membuat posisi titile ke tengah
         backgroundColor: Colors.tealAccent[4  00],// merubah warna
           
