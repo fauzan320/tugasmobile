@@ -105,6 +105,7 @@ static const String routeName ='/HalamanKedua';
         
           Center(
             child: Column(
+              
               mainAxisAlignment: MainAxisAlignment.center, // membuat posisi tengah vertikal
               children:  [
                 Text('ZONk !'),
@@ -114,6 +115,7 @@ static const String routeName ='/HalamanKedua';
                   onPressed: (){
                     Navigator.pop(context); // kembali ke halaman sebelumnya
                   },
+                
 
                 ), 
               ],
