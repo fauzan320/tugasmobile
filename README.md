@@ -23,7 +23,7 @@ Agustian Armando - 182410102057
 
 Rencana Aplikasi
 aplikasi airsudekat
-    aplikasi yang membantu orang untuk mendaftarkan desanya agar mendapatkan bantuan air bersih (pdam / pembangunan sumur) untuk mewujudkan  sdgs no 6 yakni sanitasi bersih .serta ada fitur sharing alat penjernih air untuk membuat alat yang digunakan untuk membantu meyaring air kotor agar bisa jadi bersih 
+    aplikasi yang membantu orang untuk mendaftarkan desanya agar mendapatkan bantuan air bersih (pdam / pembangunan sumur) untuk mewujudkan  sdgs no 6 yakni sanitasi bersih .serta ada fitur sharing alat penjernih air untuk membuat alat yang digunakan untuk membantu meyaring air kotor agar bisa jadi bersih , selanjutnya ada rekap data bagi yang telah mendaftar.
 
 fitur
 1. Sharing alat penjernih air
