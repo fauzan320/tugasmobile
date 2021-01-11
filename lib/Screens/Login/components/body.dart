@@ -44,7 +44,6 @@ class _BodyState extends State<Body> {
       barrierDismissible: false,
     );
   }
-
   @override
   Widget build(BuildContext context) {
       String email,password;
