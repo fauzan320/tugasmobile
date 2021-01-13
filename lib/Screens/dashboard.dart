@@ -1,13 +1,14 @@
 
 import 'package:flutter/material.dart'; // import package
 import 'package:projectawal/Screens/daftar.dart';
+import 'package:projectawal/Screens/list_user/list.dart';
+import 'package:projectawal/Screens/camera/camera.dart';
 import 'package:projectawal/components/rounded_button.dart';
 
 class dashboard extends StatelessWidget { //class dashboard turunan dari stlwidget 
   @override 
   // penggunaan nama class yang sama
   Widget build(BuildContext context) { // metod build dari stl widget , metod akan mengembalikan sebuah widget yang merupakan tampilan dari stl widget  
-    
     var appBar2 = AppBar(
           //didalanya terdapat properti titlle 
           title:Text(
@@ -60,7 +61,33 @@ class dashboard extends StatelessWidget { //class dashboard turunan dari stlwidg
                   ),
                 );
               },
-            ),
+              ),
+              RoundedButton(
+              text: "List Pendaftar",
+              press: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return IndexPage();
+                    },
+                  ),
+                );
+              },
+              ),
+              RoundedButton(
+              text: "camera",
+              press: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return CameraScreen();
+                    },
+                  ),
+                );
+              },
+              ),
                 // RaisedButton(// membuat tombol
                 //   child: Text('DAFTAR'),
                 //   onPressed: (){
