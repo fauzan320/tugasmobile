@@ -13,6 +13,7 @@ class _HomeState extends State<Daftar> {
   String _JenisBantuan="";
 
   TextEditingController controllerNama = new TextEditingController();
+  TextEditingController controllerEmail = new TextEditingController();
   TextEditingController controllerNomor = new TextEditingController();
   TextEditingController controllerRTRW = new TextEditingController(); 
   TextEditingController controllerAlamat = new TextEditingController();
@@ -26,10 +27,12 @@ class _HomeState extends State<Daftar> {
   void kirimdata(){
     AlertDialog alertDialog = new AlertDialog(
       content:new Container(
-        height : 300.0,
+        height : 350.0,
         child :new Column (
           children :<Widget>[
             new Text("Nama Lengkap : ${controllerNama.text}"),
+            new Padding(padding: new EdgeInsets.only(top: 20.0),),
+            new Text("E-Mail : ${controllerEmail.text}"),
             new Padding(padding: new EdgeInsets.only(top: 20.0),),
             new Text("Nomor Telepon : ${controllerNomor.text}"),
             new Padding(padding: new EdgeInsets.only(top: 20.0),),
@@ -56,6 +59,7 @@ class _HomeState extends State<Daftar> {
                 );
               },
             ),
+            new Text("Pastikan data anda sudah benar !"),
           ],
         ),
       ),
@@ -79,7 +83,7 @@ class _HomeState extends State<Daftar> {
           ),
           // dengan widget teks
           
-          
+        
         centerTitle: true,// membuat posisi titile ke tengah
         backgroundColor: Colors.tealAccent[400],// merubah warna
           
@@ -89,6 +93,7 @@ class _HomeState extends State<Daftar> {
       home: Scaffold(
         //properti appbar yang  memiliki widget appbar
         appBar: appBar2,
+        resizeToAvoidBottomPadding: false,
         body: new Container(
           padding: new EdgeInsets.all(10.0),
           child: new Column(
@@ -98,6 +103,20 @@ class _HomeState extends State<Daftar> {
                 decoration : new InputDecoration (
                   hintText:"Nama Lengkap Pengaju",
                   labelText: "Nama lengkap",
+                  border: new OutlineInputBorder(
+                    borderRadius: new BorderRadius.circular(20.0),
+                    
+
+                  )
+
+                ),
+              ),
+              new Padding(padding: new EdgeInsets.only(top: 20.0),),
+              new TextField(
+                controller: controllerEmail,
+                decoration : new InputDecoration (
+                  hintText:"E-mail",
+                  labelText: "E-Mail",
                   border: new OutlineInputBorder(
                     borderRadius: new BorderRadius.circular(20.0)
 
@@ -146,7 +165,7 @@ class _HomeState extends State<Daftar> {
               ),
               new Padding(padding: new EdgeInsets.only(top: 20.0),),
               new TextField(
-                maxLines: 4,
+                maxLines: 3,
                 decoration : new InputDecoration (
                   hintText:"Keterangan",
                   labelText: "Keterangan",
@@ -182,7 +201,7 @@ class _HomeState extends State<Daftar> {
                 ),
             
               new Padding(padding: new EdgeInsets.only(top: 20.0),),
-
+              
               new RaisedButton(
                 child: new Text("OK"),
                 color: Colors.tealAccent[400],
