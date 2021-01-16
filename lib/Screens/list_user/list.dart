@@ -40,7 +40,17 @@ class _IndexPageState extends State<IndexPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("List Pendaftar"),
+        leading: new IconButton(icon: new Icon(Icons.home, color: Colors.white), onPressed: () { 
+          Navigator.pop(context);
+         },),
+        title: Text("List Pendaftar",
+        style: TextStyle(
+              fontWeight:FontWeight.bold,
+              color: Colors.white
+              
+              // color: Colo,
+              ),
+        ),
       ),
       resizeToAvoidBottomPadding: false,
       resizeToAvoidBottomInset: false,

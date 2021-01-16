@@ -4,6 +4,11 @@ import 'package:flutter/material.dart';
 import 'package:path/path.dart';
 import 'package:projectawal/Screens/camera/preview_camera.dart';
 import 'package:path_provider/path_provider.dart';
+//camera
+// import 'package:projectawal/Screens/camera/constans.dart';
+// import 'package:permission_handler/permission_handler.dart';
+// import 'package:ext_storage/ext_storage.dart';
+
 
 class CameraScreen extends StatefulWidget {
   static String routeName = '/camera';

@@ -53,7 +53,7 @@ class _HomeState extends State<Daftar> {
                   context,
                   MaterialPageRoute(
                     builder: (context) {
-                      return dashboard();
+                      return Dashboard();
                     },
                   ),
                 );
@@ -70,180 +70,183 @@ class _HomeState extends State<Daftar> {
   @override 
   // penggunaan nama class yang sama
   Widget build(BuildContext context) { // metod build dari stl widget , metod akan mengembalikan sebuah widget yang merupakan tampilan dari stl widget  
-    var appBar2 = AppBar(
-          //didalanya terdapat properti titlle 
-          
-          title:Text(
-            //memberi text pada appbar
-            'FORM Pendaftaran ',
-            //memberi styling appbar
-            style: TextStyle(
-              fontWeight:FontWeight.bold,
-              ),
-          ),
-          // dengan widget teks
-          
-        
-        centerTitle: true,// membuat posisi titile ke tengah
-        backgroundColor: Colors.tealAccent[400],// merubah warna
-          
-        
-        );
-    return MaterialApp( //mengermbalikan materialapp yang berisi materialapp
-      home: Scaffold(
-        //properti appbar yang  memiliki widget appbar
-        appBar: appBar2,
-        resizeToAvoidBottomPadding: false,
-        body: new Container(
-          padding: new EdgeInsets.all(10.0),
-          child: new Column(
-            children: <Widget>[
-              new TextField(
-                controller: controllerNama,
-                decoration : new InputDecoration (
-                  hintText:"Nama Lengkap Pengaju",
-                  labelText: "Nama lengkap",
-                  border: new OutlineInputBorder(
-                    borderRadius: new BorderRadius.circular(20.0),
-                    
-
-                  )
-
+    // return new Scaffold(
+      var appBar2 = AppBar(
+        leading: new IconButton(icon: new Icon(Icons.home, color: Colors.white), onPressed: () { 
+          Navigator.pop(context);
+         },),
+            //didalanya terdapat properti titlle 
+            title:Text(
+              //memberi text pada appbar
+              'FORM Pendaftaran ',
+              //memberi styling appbar
+              style: TextStyle(
+                fontWeight:FontWeight.bold,
                 ),
-              ),
-              new Padding(padding: new EdgeInsets.only(top: 20.0),),
-              new TextField(
-                controller: controllerEmail,
-                decoration : new InputDecoration (
-                  hintText:"E-mail",
-                  labelText: "E-Mail",
-                  border: new OutlineInputBorder(
-                    borderRadius: new BorderRadius.circular(20.0)
-
-                  )
-
-                ),
-              ),
-              new Padding(padding: new EdgeInsets.only(top: 20.0),),
-              new TextField(
-                controller: controllerNomor,
-                decoration : new InputDecoration (
-                  hintText:"Nomer Telfon",
-                  labelText: "Nomer Telfon",
-                  border: new OutlineInputBorder(
-                    borderRadius: new BorderRadius.circular(20.0)
-
-                  )
-
-                ),
-              ),
-            new Padding(padding: new EdgeInsets.only(top: 20.0),),
-              new TextField(
-                controller: controllerRTRW,
-                decoration : new InputDecoration (
-                  hintText:"RT/RW",
-                  labelText: "RT/RW",
-                  border: new OutlineInputBorder(
-                    borderRadius: new BorderRadius.circular(20.0)
-
-                  )
-
-                ),
-              ),
-            new Padding(padding: new EdgeInsets.only(top: 20.0),),
-              new TextField(
-                controller: controllerAlamat,
-                decoration : new InputDecoration (
-                  hintText:"Alamat",
-                  labelText: "Alamat",
-                  border: new OutlineInputBorder(
-                    borderRadius: new BorderRadius.circular(20.0)
-
-                  )
-
-                ),
-              ),
-              new Padding(padding: new EdgeInsets.only(top: 20.0),),
-              new TextField(
-                maxLines: 3,
-                decoration : new InputDecoration (
-                  hintText:"Keterangan",
-                  labelText: "Keterangan",
-                  border: new OutlineInputBorder(
-                    borderRadius: new BorderRadius.circular(20.0)
-
-                  )
-
-                ),
-              ),
+            ),
+            // dengan widget teks
             
-              new Padding(padding: new EdgeInsets.only(top: 20.0),),
-              new RadioListTile(
-                value: "Sumur",
-                title: new Text("sumur"),
-                groupValue: _JenisBantuan, 
-                onChanged: (String value){
-                    _PilihBantuan(value);
-                },
-                activeColor: Colors.tealAccent[400],
-                subtitle: new Text("Pilih ini Jika Pembuatan Sumur memungkinkan"),
-                ),
-
-              new RadioListTile(
-                value: "PDAM",
-                title: new Text("PDAM"),
-                groupValue: _JenisBantuan, 
-                onChanged: (String value){
-                    _PilihBantuan(value);
-                },
-                activeColor: Colors.tealAccent[400],
-                subtitle: new Text("Pilih ini Jika Pembuatan Sumur TIDAK memungkinkan"),
-                ),
+          
+          centerTitle: true,// membuat posisi titile ke tengah
+          backgroundColor: Colors.tealAccent[400],// merubah warna
             
+          
+          );
+          
+      return MaterialApp( //mengermbalikan materialapp yang berisi materialapp
+        home: Scaffold(
+          //properti appbar yang  memiliki widget appbar
+          appBar: appBar2,
+          resizeToAvoidBottomPadding: false,
+          body: new Container(
+            padding: new EdgeInsets.all(10.0),
+            child: new Column(
+              children: <Widget>[
+                new TextField(
+                  controller: controllerNama,
+                  decoration : new InputDecoration (
+                    hintText:"Nama Lengkap Pengaju",
+                    labelText: "Nama lengkap",
+                    border: new OutlineInputBorder(
+                      borderRadius: new BorderRadius.circular(20.0),
+                      
+
+                    )
+
+                  ),
+                ),
+                new Padding(padding: new EdgeInsets.only(top: 20.0),),
+                new TextField(
+                  controller: controllerEmail,
+                  decoration : new InputDecoration (
+                    hintText:"E-mail",
+                    labelText: "E-Mail",
+                    border: new OutlineInputBorder(
+                      borderRadius: new BorderRadius.circular(20.0)
+
+                    )
+
+                  ),
+                ),
+                new Padding(padding: new EdgeInsets.only(top: 20.0),),
+                new TextField(
+                  controller: controllerNomor,
+                  decoration : new InputDecoration (
+                    hintText:"Nomer Telfon",
+                    labelText: "Nomer Telfon",
+                    border: new OutlineInputBorder(
+                      borderRadius: new BorderRadius.circular(20.0)
+
+                    )
+
+                  ),
+                ),
               new Padding(padding: new EdgeInsets.only(top: 20.0),),
+                new TextField(
+                  controller: controllerRTRW,
+                  decoration : new InputDecoration (
+                    hintText:"RT/RW",
+                    labelText: "RT/RW",
+                    border: new OutlineInputBorder(
+                      borderRadius: new BorderRadius.circular(20.0)
+
+                    )
+
+                  ),
+                ),
+              new Padding(padding: new EdgeInsets.only(top: 20.0),),
+                new TextField(
+                  controller: controllerAlamat,
+                  decoration : new InputDecoration (
+                    hintText:"Alamat",
+                    labelText: "Alamat",
+                    border: new OutlineInputBorder(
+                      borderRadius: new BorderRadius.circular(20.0)
+
+                    )
+
+                  ),
+                ),
+                new Padding(padding: new EdgeInsets.only(top: 20.0),),
+                new TextField(
+                  maxLines: 3,
+                  decoration : new InputDecoration (
+                    hintText:"Keterangan",
+                    labelText: "Keterangan",
+                    border: new OutlineInputBorder(
+                      borderRadius: new BorderRadius.circular(20.0)
+
+                    )
+
+                  ),
+                ),
               
-              new RaisedButton(
-                child: new Text("OK"),
-                color: Colors.tealAccent[400],
-                onPressed: () {  kirimdata();},
+                new Padding(padding: new EdgeInsets.only(top: 20.0),),
+                new RadioListTile(
+                  value: "Sumur",
+                  title: new Text("sumur"),
+                  groupValue: _JenisBantuan, 
+                  onChanged: (String value){
+                      _PilihBantuan(value);
+                  },
+                  activeColor: Colors.tealAccent[400],
+                  subtitle: new Text("Pilih ini Jika Pembuatan Sumur memungkinkan"),
+                  ),
+
+                new RadioListTile(
+                  value: "PDAM",
+                  title: new Text("PDAM"),
+                  groupValue: _JenisBantuan, 
+                  onChanged: (String value){
+                      _PilihBantuan(value);
+                  },
+                  activeColor: Colors.tealAccent[400],
+                  subtitle: new Text("Pilih ini Jika Pembuatan Sumur TIDAK memungkinkan"),
+                  ),
+              
+                new Padding(padding: new EdgeInsets.only(top: 20.0),),
                 
-              )
+                new RaisedButton(
+                  child: new Text("OK"),
+                  color: Colors.tealAccent[400],
+                  onPressed: () {  kirimdata();},
+                  
+                )
 
-            
-            ],
-          ),
-
-        ) 
-        // padding: EdgeInsets.fromLTRB(5,10, 5, 10),//memberi padding
-        
-          // Center(
-          //   child: Column(
               
-          //     mainAxisAlignment: MainAxisAlignment.center, // membuat posisi tengah vertikal
-          //     children:  [
-              
-          //       //membuat text
-          //       RaisedButton( // membuat tombol
-          //         child: Text('Kembali'),
-          //         onPressed: (){
-          //           Navigator.pop(context); // kembali ke halaman sebelumnya
-          //         },
-                
+              ],
+            ),
 
-          //       ), 
-          //     ],
-
-          //   ),
+          ) 
+          // padding: EdgeInsets.fromLTRB(5,10, 5, 10),//memberi padding
           
-          // ) , 
+            // Center(
+            //   child: Column(
+                
+            //     mainAxisAlignment: MainAxisAlignment.center, // membuat posisi tengah vertikal
+            //     children:  [
+                
+            //       //membuat text
+            //       RaisedButton( // membuat tombol
+            //         child: Text('Kembali'),
+            //         onPressed: (){
+            //           Navigator.pop(context); // kembali ke halaman sebelumnya
+            //         },
+                  
 
-        
-        
-        
-      ),
-    );
+            //       ), 
+            //     ],
+
+            //   ),
+            
+            // ) , 
+
+          
+          
+          
+        ),
+      );
   }
 }
 
-class extend {
-}
+
